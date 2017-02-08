@@ -1,0 +1,36 @@
+{
+  "name": "QA-Automation",
+  "version": "1.0.0",
+  "description": "QA -Automation",
+  "main": "index.js",
+  "scripts": {
+    "start-selenium": "java -jar -Dwebdriver.gecko.driver=./geckodriver selenium-server-standalone-3.0.1.jar",
+    "start-chrome-driver": "chromedriver.exe",
+    "start-ie-driver": "IEDriverServer.exe",
+    "start-gecko-driver": "geckodriver.exe",
+    "test": "node_modules/.bin/wdio.cmd wdio.conf.js",
+    "initiate-config": "node_modules/.bin/wdio.cmd config"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "wdio-dot-reporter": "0.0.7",
+    "wdio-mocha-framework": "^0.5.8"
+  },
+  "dependencies": {
+    "chai": "^3.5.0",
+    "wdio-mocha-framework": "^0.5.8",
+    "wdio-selenium-standalone-service": "0.0.8",
+    "wdio-spec-reporter": "0.0.5",
+    "webdriverio": "^4.6.2"
+  }
+}
